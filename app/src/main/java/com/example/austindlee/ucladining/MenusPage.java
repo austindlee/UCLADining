@@ -42,6 +42,7 @@ public class MenusPage extends AppCompatActivity {
     Context mContent;
     List<String> data;
     */
+    private int checkGitHub;
 
     private Document htmlDocument;
     private String htmlPageUrl = "https://inducesmile.com/";

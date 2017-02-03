@@ -4,9 +4,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.widget.TableLayout;
-import android.view.Window;
-import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 
 import com.example.austindlee.ucladining.hourTabs.Breakfast;
 import com.example.austindlee.ucladining.hourTabs.Dinner;

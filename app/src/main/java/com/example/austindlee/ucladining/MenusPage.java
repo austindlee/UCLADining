@@ -62,7 +62,6 @@ public class MenusPage extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        parsedHtmlNode = (TextView)findViewById(R.id.htmlOut);
     //    mContent = this;
     //    data = new ArrayList<String>();
     //    classListView = (ListView) findViewById(R.id.textView);

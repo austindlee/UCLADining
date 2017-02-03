@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.austindlee.ucladining.UCLADining"
     tools:showIn="@layout/activity_ucladining"
-    android:background="@drawable/uclapic"
+    android:background="@drawable/uclapic3"
     >
 
     <!--   android:textColorLink="?android:attr/colorPrimary" -->

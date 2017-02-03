@@ -3,12 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="Hello BFast Hours"
+    <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="219dp"
-        android:id="@+id/htmlOut" />
+        android:layout_height="match_parent"
+        android:id="@+id/listHalls"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listHours"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="175dp" />
+
 </RelativeLayout>

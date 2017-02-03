@@ -24,8 +24,8 @@ public class SwipesPage extends AppCompatActivity {
     private int p14 = 2;
     private int r19 = 3;
     private int r14 = 4;
-    private int total19P = 214;
-    private int total14P = 158;
+    private int total19P = 203;
+    private int total14P = 151;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,31 +57,14 @@ public class SwipesPage extends AppCompatActivity {
         int totalSwipesLeft = 0;
         // gets number of days between start of meal period to now
         LocalDate dateNow = new LocalDate();
-        LocalDate startFall = new LocalDate(2016, 9, 19);
+        LocalDate startFall = new LocalDate(2017, 1, 9);
         Days days = Days.daysBetween(dateNow, startFall);
         int daysBtwn = days.getDays() * -1;
         totalSwipesLeft = calcPreSwipes(daysBtwn, mealPlan);
-        totalSwipesLeft = accountForThanksBreak(daysBtwn, totalSwipesLeft, mealPlan);
         totalSwipesLeft = deductSwipes(day, hourOfDay, mealPlan, totalSwipesLeft);
         return totalSwipesLeft;
     }
 
-    public int accountForThanksBreak(int days, int swipes, int mealPlan){
-        int dayOfWeek = days%7;
-        int weeks = days/7;
-        if(days >= 66 && days < 70){
-            if(dayOfWeek == 5 | dayOfWeek == 6)
-            {
-                swipes += 6 + ((dayOfWeek%5) * 2);
-            }
-            else{
-                swipes += 3 * dayOfWeek%2;
-            }
-        }
-        else if(days >= 70)
-            swipes += 10;
-        return swipes;
-    }
     public int calcPreSwipes(int days, int mealPlan)
     {
         int swipes = 0;
